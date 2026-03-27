@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan your perfect Malaysia trip — use our interactive itinerary builder, travel tips, and visa guide.">
+  <title>Plan Your Trip — ExploreMyMalaysia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">Explore<span>MyMalaysia</span></a>
+      <ul class="navbar-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="plan.html" class="active">Plan Your Trip</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="about.html">About Malaysia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Plan Your Trip</h1>
+      <p>Build your perfect Malaysia itinerary with our interactive planning tools</p>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> <span>›</span> Plan Your Trip
+    </div>
+  </div>
+
+  <!-- Itinerary Builder -->
+  <section class="section" aria-labelledby="planner-heading">
+    <div class="container">
+      <h2 class="section-title" id="planner-heading">Interactive Itinerary Builder</h2>
+      <p class="section-subtitle">Add destinations and activities to build your personalised travel plan</p>
+
+      <div class="planner-grid">
+        <div class="planner-panel">
+          <h3>&#43; Add to Your Itinerary</h3>
+          <div class="form-group">
+            <label for="plan-day">Day Number</label>
+            <select id="plan-day">
+              <option value="1">Day 1</option>
+              <option value="2">Day 2</option>
+              <option value="3">Day 3</option>
+              <option value="4">Day 4</option>
+              <option value="5">Day 5</option>
+              <option value="6">Day 6</option>
+              <option value="7">Day 7</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="plan-dest">Destination</label>
+            <input type="text" id="plan-dest" placeholder="e.g. Langkawi, Penang...">
+          </div>
+          <div class="form-group">
+            <label for="plan-activity">Activity / Note</label>
+            <input type="text" id="plan-activity" placeholder="e.g. Visit Batu Caves, Breakfast at Penang Rd">
+          </div>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <button id="add-day-btn" class="btn btn-primary">Add Activity</button>
+            <button id="clear-plan-btn" class="btn btn-outline">Clear All</button>
+          </div>
+        </div>
+
+        <div class="planner-panel">
+          <h3>&#128205; Your Itinerary</h3>
+          <div id="itinerary-output">
+            <p style="color:#7F8C8D;font-style:italic;">Your itinerary will appear here as you add activities...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="section section-alt" aria-labelledby="tips-heading">
+    <div class="container">
+      <h2 class="section-title" id="tips-heading">Essential Travel Tips</h2>
+      <p class="section-subtitle">Everything you need to know before visiting Malaysia</p>
+      <div class="grid-3">
+        <div class="feature-item">
+          <div class="feature-icon">&#127758;</div>
+          <h3>Visa Information</h3>
+          <p>Citizens of over 160 countries can enter Malaysia visa-free for up to 90 days. Check the official Immigration Department website for the latest requirements.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#9748;</div>
+          <h3>Best Time to Visit</h3>
+          <p>Malaysia is tropical year-round. The west coast (Langkawi, Penang) is best from November–April. East coast destinations are best from March–October.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#128178;</div>
+          <h3>Currency &amp; Budget</h3>
+          <p>The Malaysian Ringgit (MYR) is the currency. Malaysia is budget-friendly — street food costs RM3–8, and quality hotels start from RM80–150 per night.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#128652;</div>
+          <h3>Getting Around</h3>
+          <p>Kuala Lumpur has an excellent LRT/MRT network. Grab (ride-hailing) is widely used. Intercity travel is convenient by bus, train (KTM), or budget airline.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#128241;</div>
+          <h3>Connectivity</h3>
+          <p>Malaysia has excellent 4G/5G coverage in urban areas. Purchase a local SIM card at the airport (RM30–50 for 10–30GB data) for affordable connectivity.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">&#127966;</div>
+          <h3>Cultural Etiquette</h3>
+          <p>Dress modestly when visiting temples and mosques. Remove shoes before entering homes. Accept food and drinks with your right hand as a sign of respect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="container" style="max-width:760px;">
+      <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Quick answers for travellers planning their Malaysia trip</p>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Is Malaysia safe for tourists? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Malaysia is generally considered a safe destination for tourists. The country has a low violent crime rate compared to many destinations. As with any travel, exercise normal precautions — keep valuables secure, stay aware in crowded areas, and use registered taxis or Grab. The tourist police are helpful in major cities.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">What language is spoken in Malaysia? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Bahasa Malaysia (Malay) is the official language, but English is widely spoken throughout the country, especially in cities, hotels, and tourist areas. You will have no difficulty communicating in English as a visitor.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Is Malaysian food suitable for vegetarians and vegans? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Yes! Malaysia has an abundant variety of vegetarian and vegan options. Indian vegetarian restaurants (serving Roti Canai, Dhal, and Thosai) are found throughout the country. Chinese Buddhist restaurants offer extensive vegan menus. Even traditional Malay cuisine has many vegetable-based dishes.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Do I need vaccinations to visit Malaysia? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">No specific vaccinations are legally required for entry to Malaysia (unless coming from a yellow fever endemic country). However, it is recommended to be up to date on routine vaccinations. Consult your doctor 4–6 weeks before travel for personalised advice.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">What is the tipping culture in Malaysia? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Tipping is not traditionally expected in Malaysia — service charges (typically 10%) are usually included in restaurant bills. That said, tips are appreciated for excellent service at upscale restaurants, by tour guides, and by hotel staff. Rounding up taxi fares is also common courtesy.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Explore<span>MyMalaysia</span></span>
+          <p>Your trusted guide to discovering the wonders of Malaysia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Plan</h4>
+          <ul>
+            <li><a href="plan.html">Plan Your Trip</a></li>
+            <li><a href="about.html">About Malaysia</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ExploreMyMalaysia. BIT102 Assignment 2.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

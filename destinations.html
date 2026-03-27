@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all Malaysian destinations — beaches, nature, heritage cities and more. Filter by category and region.">
+  <title>Destinations — ExploreMyMalaysia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">Explore<span>MyMalaysia</span></a>
+      <ul class="navbar-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="about.html">About Malaysia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Explore Malaysia</h1>
+      <p>Discover 16 states, hundreds of islands, and countless unforgettable experiences</p>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> <span>›</span> Destinations
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="toolbar" aria-label="Filter destinations">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beach">&#127944; Beach</button>
+        <button class="filter-btn" data-filter="nature">&#127795; Nature</button>
+        <button class="filter-btn" data-filter="heritage">&#127963; Heritage</button>
+        <button class="filter-btn" data-filter="city">&#127751; City</button>
+        <button class="filter-btn" data-filter="adventure">&#9968;&#65039; Adventure</button>
+      </div>
+
+      <!-- Destination Cards Grid -->
+      <div class="grid-3">
+
+        <article class="card dest-card" data-category="beach">
+          <img class="card-img" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format&fit=crop" alt="Langkawi clear waters">
+          <div class="card-body">
+            <span class="card-tag">Beach</span>
+            <h3 class="card-title">Langkawi, Kedah</h3>
+            <p class="card-text">A duty-free archipelago of 99 islands with pristine beaches, cable cars over the rainforest canopy, and stunning sunsets over the Andaman Sea.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="city">
+          <img class="card-img" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format&fit=crop" alt="Kuala Lumpur skyline at night">
+          <div class="card-body">
+            <span class="card-tag">City</span>
+            <h3 class="card-title">Kuala Lumpur</h3>
+            <p class="card-text">Malaysia's buzzing capital — home to the iconic Petronas Twin Towers, vibrant Chinatown, Little India, and an incredible street food scene.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="heritage">
+          <img class="card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Penang street art and heritage houses">
+          <div class="card-body">
+            <span class="card-tag">Heritage</span>
+            <h3 class="card-title">George Town, Penang</h3>
+            <p class="card-text">A UNESCO World Heritage Site with stunning colonial architecture, world-famous street art murals, and the best Hawker food in all of Malaysia.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="nature">
+          <img class="card-img" src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=600&auto=format&fit=crop" alt="Borneo rainforest canopy">
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3 class="card-title">Sabah, Borneo</h3>
+            <p class="card-text">Encounter wild orangutans, proboscis monkeys, and pygmy elephants in the ancient rainforest. Climb Mount Kinabalu, Southeast Asia's tallest peak.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="nature">
+          <img class="card-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop" alt="Cameron Highlands tea plantation">
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3 class="card-title">Cameron Highlands</h3>
+            <p class="card-text">Cool highland retreat with rolling tea plantations, strawberry farms, mossy forests, and colourful butterfly parks at 1,500 metres above sea level.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="heritage">
+          <img class="card-img" src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?w=600&auto=format&fit=crop" alt="Melaka Dutch Square">
+          <div class="card-body">
+            <span class="card-tag">Heritage</span>
+            <h3 class="card-title">Melaka (Malacca)</h3>
+            <p class="card-text">Malaysia's most historically rich city — Portuguese forts, Dutch colonial architecture, Peranakan shophouses, and a vibrant river cruise awaits.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="beach">
+          <img class="card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop" alt="Tioman Island crystal clear water">
+          <div class="card-body">
+            <span class="card-tag">Beach</span>
+            <h3 class="card-title">Tioman Island</h3>
+            <p class="card-text">A paradise island off the east coast with coral reefs teeming with marine life, jungle trekking trails, and some of the best snorkelling in Asia.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="adventure">
+          <img class="card-img" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop" alt="Mulu Caves Sarawak">
+          <div class="card-body">
+            <span class="card-tag">Adventure</span>
+            <h3 class="card-title">Mulu Caves, Sarawak</h3>
+            <p class="card-text">The world's largest cave chamber — Sarawak Chamber — is found here. A UNESCO World Heritage Site offering spectacular caving and jungle trekking.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+        <article class="card dest-card" data-category="city">
+          <img class="card-img" src="https://images.unsplash.com/photo-1559127452-63840d64daf4?w=600&auto=format&fit=crop" alt="Kota Kinabalu waterfront">
+          <div class="card-body">
+            <span class="card-tag">City</span>
+            <h3 class="card-title">Kota Kinabalu</h3>
+            <p class="card-text">Sabah's vibrant capital offers stunning sunset views, a colourful Filipino market, fresh seafood, and easy access to nearby islands and national parks.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Explore<span>MyMalaysia</span></span>
+          <p>Your trusted guide to discovering the wonders of Malaysia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Plan</h4>
+          <ul>
+            <li><a href="plan.html">Plan Your Trip</a></li>
+            <li><a href="about.html">About Malaysia</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ExploreMyMalaysia. BIT102 Assignment 2.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

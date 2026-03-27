@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ExploreMyMalaysia — Discover the beauty, culture, and adventure of Malaysia. Plan your perfect trip today.">
+  <title>ExploreMyMalaysia — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">Explore<span>MyMalaysia</span></a>
+      <ul class="navbar-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="plan.html">Plan Your Trip</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="about.html">About Malaysia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Hero slideshow">
+    <div class="hero-slides">
+      <div class="hero-slide hero-slide-1" role="img" aria-label="Langkawi beach"></div>
+      <div class="hero-slide hero-slide-2" role="img" aria-label="Batu Caves, Kuala Lumpur"></div>
+      <div class="hero-slide hero-slide-3" role="img" aria-label="Penang heritage street"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Malaysia — Truly Yours</h1>
+      <p>From pristine beaches to ancient rainforests, vibrant cities to cultural heritage sites — your Malaysian adventure starts here.</p>
+      <div class="hero-btns">
+        <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+        <a href="plan.html" class="btn btn-secondary">Plan My Trip</a>
+      </div>
+    </div>
+    <div class="hero-dots" role="tablist" aria-label="Slideshow controls">
+      <button class="hero-dot" role="tab" aria-label="Slide 1"></button>
+      <button class="hero-dot" role="tab" aria-label="Slide 2"></button>
+      <button class="hero-dot" role="tab" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- Quick Search -->
+  <section class="search-bar-section" aria-label="Quick destination search">
+    <div class="container">
+      <form class="search-form" role="search" id="quick-search">
+        <input type="text" placeholder="&#128269; Where do you want to go?" aria-label="Search destination">
+        <select aria-label="Choose category">
+          <option value="">All Categories</option>
+          <option value="beach">Beach</option>
+          <option value="nature">Nature</option>
+          <option value="heritage">Heritage</option>
+          <option value="city">City</option>
+        </select>
+        <select aria-label="Choose duration">
+          <option value="">Trip Duration</option>
+          <option value="weekend">Weekend (2–3 days)</option>
+          <option value="short">Short Trip (4–6 days)</option>
+          <option value="long">Long Trip (7+ days)</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <h2 class="section-title" id="featured-heading">Featured Destinations</h2>
+      <p class="section-subtitle">Handpicked gems across Malaysia — from east to west</p>
+      <div class="grid-3">
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format&fit=crop" alt="Langkawi island view with turquoise water">
+          <div class="card-body">
+            <span class="card-tag">Beach</span>
+            <h3 class="card-title">Langkawi</h3>
+            <p class="card-text">A duty-free island paradise with white sandy beaches, cable cars, and lush mangroves. Perfect for relaxation and adventure.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1562407048-de1aa0e03c95?w=600&auto=format&fit=crop" alt="Batu Caves Hindu temple staircase">
+          <div class="card-body">
+            <span class="card-tag">Heritage</span>
+            <h3 class="card-title">Kuala Lumpur</h3>
+            <p class="card-text">A dazzling skyline, the iconic Petronas Twin Towers, vibrant street food culture, and world-class shopping all in one city.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Penang colonial heritage buildings">
+          <div class="card-body">
+            <span class="card-tag">Heritage</span>
+            <h3 class="card-title">Penang</h3>
+            <p class="card-text">UNESCO World Heritage city famed for its colonial architecture, vibrant street art, and some of the best street food in Asia.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=600&auto=format&fit=crop" alt="Borneo rainforest canopy walk">
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3 class="card-title">Borneo Rainforest</h3>
+            <p class="card-text">One of the oldest rainforests on Earth — home to orangutans, pygmy elephants, and a breathtaking diversity of flora and fauna.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop" alt="Cameron Highlands tea plantation">
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3 class="card-title">Cameron Highlands</h3>
+            <p class="card-text">Rolling hills of emerald-green tea plantations, cool mountain air, strawberry farms, and scenic mossy forests await you.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1560448205-17d3a46c84de?w=600&auto=format&fit=crop" alt="Melaka River Cruise at night">
+          <div class="card-body">
+            <span class="card-tag">Heritage</span>
+            <h3 class="card-title">Melaka</h3>
+            <p class="card-text">A city where Portuguese, Dutch, and British colonial history meets Peranakan culture. The historic city comes alive by night.</p>
+            <a href="destinations.html" class="btn btn-outline">Discover</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Visit Malaysia -->
+  <section class="section section-alt" aria-labelledby="why-heading">
+    <div class="container">
+      <h2 class="section-title" id="why-heading">Why Visit Malaysia?</h2>
+      <p class="section-subtitle">Three compelling reasons to make Malaysia your next destination</p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon" role="img" aria-label="Rainforest">&#127795;</div>
+          <h3>Extraordinary Biodiversity</h3>
+          <p>Home to over 15,000 plant species, 600 bird species, and ancient rainforests older than the Amazon. Malaysia is a nature lover's dream.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon" role="img" aria-label="Lanterns">&#127983;</div>
+          <h3>Rich Cultural Heritage</h3>
+          <p>A harmonious blend of Malay, Chinese, Indian, and indigenous cultures expressed through festivals, architecture, and daily life.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon" role="img" aria-label="Food">&#127859;</div>
+          <h3>World-Class Cuisine</h3>
+          <p>From Nasi Lemak to Char Kway Teow, Roti Canai to Laksa — Malaysian food is consistently ranked among the best in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats-strip" aria-label="Malaysia tourism statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="16">0</h3>
+          <p>States to Explore</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="878">0</h3>
+          <p>Islands &amp; Beaches</p>
+        </div>
+        <div class="stat-item">
+        <h3 class="counter" data-target="26000000">0</h3>
+          <p>Visitors per Year</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="4">0</h3>
+          <p>UNESCO Heritage Sites</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <h2 class="section-title text-white" id="testimonials-heading">What Travellers Say</h2>
+      <p class="section-subtitle text-white" style="opacity:0.8;">Real stories from real adventurers</p>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">"Malaysia exceeded every expectation. Langkawi was paradise, Penang's food was extraordinary, and everyone we met was so welcoming. We will absolutely be back!"</p>
+          <p class="testimonial-name">— Sarah L., Australia</p>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">"The Borneo rainforest experience was life-changing. Seeing wild orangutans in their natural habitat is something I will never forget. Malaysia is truly special."</p>
+          <p class="testimonial-name">— James K., United Kingdom</p>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-quote">"As a first-time visitor to Southeast Asia, Malaysia was the perfect choice. Safe, easy to get around, affordable, and the food culture alone is worth the trip."</p>
+          <p class="testimonial-name">— Aisha M., UAE</p>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button id="testimonial-prev" aria-label="Previous testimonial">&#8592;</button>
+        <button id="testimonial-next" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section" aria-labelledby="newsletter-heading">
+    <div class="container text-center">
+      <h2 id="newsletter-heading">Stay Inspired</h2>
+      <p>Get the latest travel guides, destination tips, and exclusive deals delivered to your inbox.</p>
+      <form id="newsletter-form" style="max-width:480px;margin:0 auto;display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address" style="flex:1;min-width:200px;padding:0.75rem 1rem;border:2px solid #ddd;border-radius:50px;font-family:inherit;font-size:0.95rem;">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Explore<span>MyMalaysia</span></span>
+          <p>Your trusted guide to discovering the wonders of Malaysia — from hidden gems to iconic landmarks.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="plan.html">Plan Your Trip</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <ul>
+            <li><a href="about.html">About Malaysia</a></li>
+            <li><a href="about.html#culture">Culture &amp; History</a></li>
+            <li><a href="about.html#cuisine">Malaysian Cuisine</a></li>
+            <li><a href="about.html#faq">Travel FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Live Chat</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ExploreMyMalaysia. BIT102 Assignment 2 — Front-end Web Development.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
